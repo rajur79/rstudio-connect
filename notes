@@ -1,0 +1,19 @@
+rsconnect deploy api --server http://172.22.162.227:3939/ --api-key fZR32jGHfgvvJFQlwsmX8VtP2QCfItVh ./flask-app
+
+Deployment completed successfully.
+    Dashboard content URL: http://172.22.162.227:3939/connect/#/apps/98226a87-31dc-487c-b2db-8c3b0f7a2517
+    Direct content URL: http://172.22.162.227:3939/content/98226a87-31dc-487c-b2db-8c3b0f7a2517/
+	
+rsconnect deploy dash --server http://172.22.162.227:3939/ --api-key fZR32jGHfgvvJFQlwsmX8VtP2QCfItVh --entrypoint app:app ./dash-sample-apps
+
+Deployment completed successfully.
+    Dashboard content URL: http://172.22.162.227:3939/connect/#/apps/afb76afe-a591-463c-8685-5b74dbc31a58
+    Direct content URL: http://172.22.162.227:3939/content/afb76afe-a591-463c-8685-5b74dbc31a58/
+
+rsconnect deploy streamlit --server http://172.22.162.227:3939/ --api-key fZR32jGHfgvvJFQlwsmX8VtP2QCfItVh --entrypoint streamlit_app.py demo-uber-nyc-pickups/
+
+Completed Python build against Python version: '3.9.5'
+Launching Streamlit application...
+Deployment completed successfully.
+    Dashboard content URL: http://172.22.162.227:3939/connect/#/apps/cd50ca92-3e8d-48ee-8df6-6fb7e7c80ab8
+    Direct content URL: http://172.22.162.227:3939/content/cd50ca92-3e8d-48ee-8df6-6fb7e7c80ab8/
